@@ -55,3 +55,114 @@ html {
 *:before {
   box-sizing: inherit;
 }
+
+/* Оформление сайта */
+
+@import url('//fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .location {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header img {
+  display: flex;
+}
+
+header p {
+  display: inline-flex;
+  margin: 0 9px 0 9px;
+}
+
+header .asap-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #1D1D1D;
+  line-height: 24px;
+  text-align: center; 
+}
+
+header input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 292px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  color: #1D1D1D;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 36px;
+  outline: none;
+  background: url(images/location.svg) no-repeat 12px;
+}
+
+header .sign-up-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #1D1D1D;
+  margin-right: 16px;
+}
+
+header .register-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+  background: #262626;
+  margin-right: 27px;
+}
+
+header .basket-button {
+  display: inline-flex;
+  width: 19px;
+  height: 22px;
+  background: url(images/basket.svg); 
+}
