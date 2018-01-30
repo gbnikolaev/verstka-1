@@ -128,7 +128,7 @@ header input {
   line-height: 24px;
   padding-left: 36px;
   outline: none;
-  background: url(images/location.svg) no-repeat 12px;
+  background: url(../images/location.svg) no-repeat 12px;
 }
 
 header .sign-up-button {
@@ -164,5 +164,5 @@ header .basket-button {
   display: inline-flex;
   width: 19px;
   height: 22px;
-  background: url(images/basket.svg); 
+  background: url(../images/basket.svg); 
 }
