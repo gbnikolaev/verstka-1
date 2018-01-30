@@ -115,7 +115,7 @@ header .asap-button {
   text-align: center; 
 }
 
-header input {
+header .location input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -165,4 +165,20 @@ header .basket-button {
   width: 19px;
   height: 22px;
   background: url(../images/basket.svg); 
+}
+
+.search-field {
+  margin-top: 32px;
+}
+
+.search-field input {
+  display: flex;
+  padding: 15px 0px 15px 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(117,117,117,0.5);
+  color: rgba(98,98,98,0.3);
+  font-size: 16px;
+  outline: none;
+  background: url(../images/search.svg) no-repeat 0px;
 }
