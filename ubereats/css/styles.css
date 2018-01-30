@@ -1,7 +1,7 @@
 /* Flexbox Grid */
 
 .container {
-  width: 956px;
+  width: 972px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -181,4 +181,54 @@ header .basket-button {
   font-size: 16px;
   outline: none;
   background: url(../images/search.svg) no-repeat 0px;
+}
+
+/* Список ресторанов */
+
+.restaurant-list .restaurant-item {
+  margin-top: 36px;
+}
+
+.restaurant-list h1 {
+  font-size: 22px;
+  color: #1D1D1D;
+  margin: 56px 0px 16px 0px;
+}
+
+.restaurant-list h2 {
+  font-size: 16px;
+  color: #1D1D1D;
+  margin: 16px 0px 4px 0px;
+  line-height: 24px;
+}
+
+.restaurant-list h3 {
+  display: inline-flex;
+  font-size: 14px;
+  color: #626262;
+  margin: 0px 0px 4px 0px;
+  line-height: 21px;
+}
+
+.restaurant-list h4 {
+  font-size: 13px;
+  color: #1D1D1D;
+  margin: 0;
+  line-height: 21px;
+}
+
+/* Футер */
+
+footer {
+  display: flex;
+  background: #262626;
+}
+
+footer .footer-logo {
+  margin-top: 56px;
+}
+
+footer hr {
+  opacity: 0.4;
+  margin-top: 40px;
 }
