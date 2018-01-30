@@ -193,6 +193,7 @@ header .basket-button {
   font-size: 22px;
   color: #1D1D1D;
   margin: 56px 0px 16px 0px;
+  font-weight: normal;
 }
 
 .restaurant-list h2 {
@@ -200,6 +201,7 @@ header .basket-button {
   color: #1D1D1D;
   margin: 16px 0px 4px 0px;
   line-height: 24px;
+  font-weight: normal;
 }
 
 .restaurant-list h3 {
@@ -208,6 +210,7 @@ header .basket-button {
   color: #626262;
   margin: 0px 0px 4px 0px;
   line-height: 21px;
+  font-weight: normal;
 }
 
 .restaurant-list h4 {
@@ -215,12 +218,14 @@ header .basket-button {
   color: #1D1D1D;
   margin: 0;
   line-height: 21px;
+  font-weight: normal;
 }
 
 /* Футер */
 
 footer {
   display: flex;
+  margin-top: 80px;
   background: #262626;
 }
 
@@ -231,4 +236,126 @@ footer .footer-logo {
 footer hr {
   opacity: 0.4;
   margin-top: 40px;
+}
+
+footer .hr-2 {
+  margin-top: 48px;
+}
+
+footer .hr-3 {
+  margin-top: 0px;
+}
+
+footer select {
+  display: flex;
+  width: 227px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background: url(../images/world.svg) no-repeat 26px,
+              url(../images/select-icon.svg) no-repeat 205px;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 13px;
+  padding-left: 48px;
+  margin-top: 32px;
+  text-transform: uppercase; 
+  -webkit-appearance: none;
+}
+
+
+footer .styled-select {
+  background: #3B3B3B;
+  width: 227px;
+}
+
+footer h5 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  font-weight: normal;
+  margin: 33px 0px 17px 0px;
+}
+
+footer h5 span {
+  color: #49A144;
+}
+
+footer .social {
+  display: inline-flex;
+}
+
+footer .social .fb,
+footer .social .tw,
+footer .social .in {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+footer .social .fb {
+  background: url(../images/facebook.svg) no-repeat;
+}
+
+footer .social .tw {
+  background: url(../images/twitter.svg) no-repeat;
+}
+
+footer .social .in {
+  background: url(../images/instagram.svg) no-repeat;
+}
+
+footer .footer-menu {
+  margin-top: 39px;
+}
+
+footer .footer-menu a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0px 0px 23px 0px;
+}
+
+footer .apps {
+  display: flex;
+  justify-content: center;
+}
+
+footer .apps a {
+  margin: 40px 20px;
+}
+
+footer .apps .appstore {
+  width: 121px;
+  height: 40px;
+  background: url(../images/appstore.png) no-repeat;
+}
+
+footer .apps .gplay {
+  width: 135px;
+  height: 40px;
+  background: url(../images/gplay.png) no-repeat;
+}
+
+footer .copyright {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 40px 0;
+}
+
+.up {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: #59BD5A url(../images/arrow.svg) no-repeat center;
+  border-radius: 2px;
 }
