@@ -1,6 +1,7 @@
 /* Flexbox Grid */
 
 .container {
+  width: 324px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -47,7 +48,7 @@
 
 @media (min-width: 576px) {
   .container {
-    width: 576px;
+    width: 324px;
   }
 
   .col-sm-1,
@@ -342,6 +343,20 @@ header .basket-button {
 
 .restaurant-list .restaurant-item {
   margin-top: 36px;
+}
+
+@media (min-width: 320px) {
+  .restaurant-item img {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .restaurant-item img {
+    height: 256px;
+    width: 100%;
+  }
 }
 
 .restaurant-list h1 {
