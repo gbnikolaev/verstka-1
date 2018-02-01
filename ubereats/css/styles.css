@@ -312,11 +312,9 @@ header .basket-button {
   margin-top: 36px;
 }
 
-@media (min-width: 320px) {
-  .restaurant-item img {
-    height: 250px;
-    width: 100%;
-  }
+.restaurant-item img {
+  height: 250px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
