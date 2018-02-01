@@ -8,12 +8,6 @@
   padding-right: 8px;  
 }
 
-@media (min-width: 576px) {
-  .container {
-    width: 324px;
-  }
-}
-
 @media (min-width: 768px) {
   .container {
     width: 768px;
