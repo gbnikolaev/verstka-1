@@ -515,19 +515,33 @@ footer .apps {
 }
 
 footer .apps a {
-  margin: 40px 20px;
+  margin: 25px 25px;
 }
 
 footer .apps .appstore {
-  width: 121px;
-  height: 40px;
+  width: 107px;
+  height: 36px;
   background: url(../images/appstore.png) no-repeat;
 }
 
 footer .apps .gplay {
-  width: 135px;
-  height: 40px;
+  width: 124px;
+  height: 36px;
   background: url(../images/gplay.png) no-repeat;
+}
+
+@media (min-width: 768px) {
+  footer .apps .appstore {
+    width: 121px;
+    height: 40px;
+  }
+  footer .apps .gplay {
+    width: 135px;
+    height: 40px;
+  }
+  footer .apps a {
+    margin: 40px 20px;
+  }
 }
 
 footer .copyright {
