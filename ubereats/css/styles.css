@@ -496,8 +496,21 @@ footer .social .in {
   background: url(../images/instagram.svg) no-repeat;
 }
 
-footer .footer-menu {
+footer .footer-menu-first {
   margin-top: 39px;
+}
+
+footer .footer-menu-second {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  footer .footer-menu-first {
+    margin-top: 42px;
+  }
+  footer .footer-menu-second {
+    margin-top: 42px;
+  }
 }
 
 footer .footer-menu a {
@@ -522,12 +535,14 @@ footer .apps .appstore {
   width: 107px;
   height: 36px;
   background: url(../images/appstore.png) no-repeat;
+  background-size: cover;
 }
 
 footer .apps .gplay {
   width: 124px;
   height: 36px;
   background: url(../images/gplay.png) no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -550,7 +565,13 @@ footer .copyright {
   text-decoration: none;
   font-size: 11px;
   line-height: 13px;
-  margin: 40px 0;
+  margin: 12px 0;
+}
+
+@media (min-width: 768px) {
+  footer .copyright {
+    margin: 20px 0;
+  }
 }
 
 .up {
