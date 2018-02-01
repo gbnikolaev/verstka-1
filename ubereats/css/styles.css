@@ -297,15 +297,15 @@ header .register-button {
 }
 
 header .basket-button {
-  display: inline-flex;
-  width: 19px;
-  height: 22px;
-  background: url(../images/basket.svg); 
+  display: none;
 }
 
 @media (min-width: 768px) {
   header .basket-button {
-    display: none;
+    display: inline-flex;
+    width: 19px;
+    height: 22px;
+    background: url(../images/basket.svg); 
   }
 }
 
