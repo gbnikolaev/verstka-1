@@ -160,17 +160,14 @@ header .logo {
 }
 
 header .location {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  display: none;
 }
 
 @media (min-width: 768px) {
   header .location {
+    display: flex;
     justify-content: flex-start;
-  }
-  header .location p {
-    font-size: 13px;
+    align-content: center;
   }
 }
 
@@ -186,10 +183,18 @@ header img {
 
 header p {
   display: inline-flex;
-  margin: 0 9px 0 9px;
+  margin: 10px 9px 10px 9px;
+  font-size: 13px;
 }
 
-header .asap-button {
+@media (min-width: 768px) {
+  header .location p {
+    font-size: 16px;
+  }
+}
+
+header .asap-button,
+.location-mobile .asap-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +203,7 @@ header .asap-button {
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   color: #1D1D1D;
   line-height: 24px;
   text-align: center; 
@@ -206,21 +211,28 @@ header .asap-button {
 
 @media (min-width: 768px) {
   header .asap-button {
-    font-size: 13px;
     width: 57px;
   }
 }
 
-header .location input {
+@media (min-width: 992px) {
+  header .asap-button {
+    font-size: 16px;
+    width: 65px;
+  }
+}
+
+header .location input,
+.location-mobile input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 292px;
+  width: 227px;
   height: 40px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   color: #1D1D1D;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   padding-left: 36px;
   outline: none;
@@ -231,6 +243,13 @@ header .location input {
   header .location input {
     font-size: 13px;
     width: 215px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .location input {
+    font-size: 16px;
+    width: 292px;
   }
 }
 
@@ -284,7 +303,7 @@ header .basket-button {
   background: url(../images/basket.svg); 
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   header .basket-button {
     display: none;
   }
@@ -301,9 +320,43 @@ header .basket-button {
   border: none;
   border-bottom: 1px solid rgba(117,117,117,0.5);
   color: rgba(98,98,98,0.3);
-  font-size: 16px;
+  font-size: 13px;
+  line-height: 24px;
   outline: none;
   background: url(../images/search.svg) no-repeat 0px;
+  background-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .search-field input {
+    font-size: 16px;
+  }
+}
+
+.location-mobile {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .location-mobile {
+    display: none;
+  }
+}
+
+.location-mobile .location {
+  display: flex;
+  justify-content: center;
+}
+
+.location-mobile p {
+  color: #626262;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 24px 0px 8px 0px;
+}
+
+.location-mobile .asap-button {
+  margin-right: 16px;
 }
 
 /* Список ресторанов */
