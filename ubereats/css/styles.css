@@ -604,11 +604,18 @@ body {
 }
 
 .body__scroll {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   position: fixed;
   right: 16px;
   bottom: 24px;
   background: #59BD5A url(../images/arrow.svg) no-repeat center;
   border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .body__scroll {
+    width: 80px;
+    height: 80px;
+  }
 }
