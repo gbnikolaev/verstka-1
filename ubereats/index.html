@@ -11,231 +11,228 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
+
+  <header class="header">
     <div class="container">
       <div class="row">
-        
+
         <div class="col-md-2 col-sm-2 col-xs-4">
           <div class="logo">
-            <a href="#"><img src="./images/logo.svg" alt="UberEats"></a>
+            <a href="#">
+              <img class="logo__item" src="./images/logo.svg" alt="UberEats" title="UberEats">
+            </a>
           </div>
         </div>
-        
+
         <div class="col-md-6 col-sm-6">
           <div class="location">
-            <a href="#" class="asap-button">ASAP</a>
-            <p>to</p>
-            <input type="text" value="ul. Bolshaya Dmitrovka, 22">
+            <form class="location__form" action="#">
+              <input class="location__time" type="text" placeholder="ASAP">
+              <label><input class="location__address" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">to</label>
+            </form>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-4 col-xs-6">
-          <div class="nav">
-            <a href="#" class="sign-up-button">Sign Up</a>
-            <a href="#" class="register-button">Register</a>
-            <a href="#" class="basket-button"></a>
+          <div class="header__buttons">
+            <button class="button button--sign-up">Sign Up</button>
+            <button class="button button--register">Sign Up</button>
+            <button class="button-basket"></button>
           </div>
         </div>
+
       </div>
     </div>
   </header>
 
-  <div class="search-field">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <input type="text" placeholder="Search for restaurant or cuisine">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="location-mobile">
-    <div class="col-xs-12">
-      <div class="location">
-        <div class="asap-text">
-          <p>When</p>
-          <a href="#" class="asap-button">ASAP</a>
-        </div>
-        
-        <div class="input-text">
-          <p>To</p>
-          <input type="text" value="ul. Bolshaya Dmitrovka, 22">
-        </div>
-      </div>
-    </div>
-  </div>
-
   <section class="restaurant-list">
     <div class="container">
-      <h1>Moscow Restaurants</h1>
-      
-      <div class="row"> 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo1.png" alt="Макдоналдс — Газетный">
-            <div class="restaurant-description">
-              <h2>Макдоналдс — Газетный</h2>
-              <h3>₽₽</h3> • <h3>Бургеры</h3>
-              <h4>25 - 35 Min</h4>
-            </div>
+      <div class="row">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="restaurant-list__search">
+            <form class="restaurant-list__form" action="#">
+              <input class="restaurant-list__input" type="text" placeholder="Search for restaurant or cuisine">
+            </form>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo2.png" alt="DimSum & Co — ЦДМ">
-            <div class="restaurant-description">
-              <h2>DimSum & Co — ЦДМ</h2>
-              <h3>₽</h3> • <h3>Японская</h3> • <h3>Китайская</h3> • <h3>Азиатская</h3>
-              <h4>40 - 50 Min</h4>
-            </div>
+
+        <div class="col-xs-12">
+          <div class="location location--mobile">
+            <form class="location__form" action="#">
+              <label><input class="location__time" type="text" placeholder="ASAP">When</label>
+              <label><input class="location__address" type="text" placeholder="ul. Bolshaya Dmitrovka, 22">To</label>
+            </form>
           </div>
         </div>
+
+        <h1 class="restaurant-list__title">
+          Moscow Restaurants
+        </h1>
+
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo3.png" alt="ДвижОК — Манежная">
-            <div class="restaurant-description">
-              <h2>ДвижОК — Манежная</h2>
-              <h3>₽₽</h3> • <h3>Американская</h3> • <h3>Европейская</h3>
-              <h4>35 - 45 Min</h4>
-            </div>
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo1.png" alt="Макдоналдс — Газетный" title="Макдоналдс — Газетный">
+            <h2 class="restaurant-list__name">Макдоналдс — Газетный</h2>
+            <h3 class="restaurant-list__category">₽₽</h3> • <h3>Бургеры</h3>
+            <h4 class="restaurant-list__time">25 - 35 Min</h4>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo4.png" alt="НЯ — NHA">
-            <div class="restaurant-description">
-              <h2>НЯ — NHA</h2>
-              <h3>₽₽</h3> • <h3>Вьетнамская</h3>
-              <h4>30 - 40 Min</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo5.png" alt="Точка Дзы — Цветной">
-            <div class="restaurant-description">
-              <h2>Точка Дзы — Цветной</h2>
-              <h3>₽₽</h3> • <h3>Вьетнамская</h3>
-              <h4>40 - 50 Min</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo6.png" alt="Cinnabon">
-            <div class="restaurant-description">
-              <h2>Cinnabon</h2>
-              <h3>₽₽</h3> • <h3>Выпечка</h3> • <h3>Десерты</h3> • <h3>Капкейки</h3>
-              <h4>25 - 35 Min</h4>
-            </div>
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo2.png" alt="DimSum & Co — ЦДМ" title="DimSum & Co — ЦДМ">
+            <h2 class="restaurant-list__name">DimSum & Co — ЦДМ</h2>
+            <h3 class="restaurant-list__category">₽ • Японская • Китайская • Азиатская</h3>
+            <h4 class="restaurant-list__time">40 - 50 Min</h4>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo7.png" alt="PIZZELOVE">
-            <div class="restaurant-description">
-              <h2>PIZZELOVE</h2>
-              <h3>₽₽</h3> • <h3>Пицца</h3>
-              <h4>15 - 25 Min</h4>
-            </div>
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo3.png" alt="ДвижОК — Манежная" title="ДвижОК — Манежная">
+            <h2 class="restaurant-list__name">ДвижОК — Манежная</h2>
+            <h3 class="restaurant-list__category">₽ • Американская • Европейская</h3>
+            <h4 class="restaurant-list__time">35 - 45 Min</h4>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo8.png" alt="Zю кафе — Тверская">
-            <div class="restaurant-description">
-              <h2>Zю кафе — Тверская</h2>
-              <h3>₽₽</h3> • <h3>Японская</h3>
-              <h4>25 - 35 Min</h4>
-            </div>
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo4.png" alt="НЯ — NHA" title="НЯ — NHA">
+            <h2 class="restaurant-list__name">НЯ — NHA</h2>
+            <h3 class="restaurant-list__category">₽₽ • Вьетнамская</h3>
+            <h4 class="restaurant-list__time">30 - 40 Min</h4>
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="restaurant-item">
-            <img src="./images/photo9.png" alt="Bar BQ Cafe — Манежная">
-            <div class="restaurant-description">
-              <h2>Bar BQ Cafe — Манежная</h2>
-              <h3>₽₽₽</h3> • <h3>Европейская</h3>
-              <h4>30 - 40 Min</h4>
-            </div>
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo5.png" alt="Точка Дзы — Цветной" title="Точка Дзы — Цветной">
+            <h2 class="restaurant-list__name">Точка Дзы — Цветной</h2>
+            <h3 class="restaurant-list__category">₽₽ • Вьетнамская</h3>
+            <h4 class="restaurant-list__time">40 - 50 Min</h4>
           </div>
         </div>
-      </div> 
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo6.png" alt="Cinnabon" title="Cinnabon">
+            <h2 class="restaurant-list__name">Cinnabon</h2>
+            <h3 class="restaurant-list__category">₽ • Выпечка • Десерты • Капкейки</h3>
+            <h4 class="restaurant-list__time">25 - 35 Min</h4>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo7.png" alt="PIZZELOVE" title="PIZZELOVE">
+            <h2 class="restaurant-list__name">PIZZELOVE</h2>
+            <h3 class="restaurant-list__category">₽₽ • Пицца</h3>
+            <h4 class="restaurant-list__time">15 - 25 Min</h4>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo8.png" alt="Zю кафе — Тверская" title="Zю кафе — Тверская">
+            <h2 class="restaurant-list__name">Zю кафе — Тверская</h2>
+            <h3 class="restaurant-list__category">₽₽ • Японская</h3>
+            <h4 class="restaurant-list__time">25 - 35 Min</h4>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="restaurant-list__item">
+            <img class="restaurant-list__photo" src="./images/photo9.png" alt="Bar BQ Cafe — Манежная" title="Bar BQ Cafe — Манежная">
+            <h2 class="restaurant-list__name">Bar BQ Cafe — Манежная</h2>
+            <h3 class="restaurant-list__category">₽₽₽ • Европейская</h3>
+            <h4 class="restaurant-list__time">30 - 40 Min</h4>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="row">
+        
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <img src="./images/white-logo.svg" alt="UberEats" class="footer-logo">
-          <hr>
+          <div class="logo">
+            <a href="#">
+              <img class="logo__item" src="./images/logo.svg" alt="UberEats" title="UberEats">
+            </a>
+          </div>
+          <hr class="footer__line">
         </div>
 
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="styled-select">
-            <select name="" id="">
+          <div class="footer__language">
+            <select class="footer__select" name="language">
               <option value="English">English</option>
             </select>
           </div>
-          <h5><span>#</span>UberEats</h5>
-          <div class="social">
-            <a href="#" class="fb"></a>
-            <a href="#" class="tw"></a>
-            <a href="#" class="in"></a>
+
+          <h5 class="footer__hash-tag">
+            <span class="footer__hash-tag--green">#</span>UberEats
+          </h5>
+          
+          <div class="footer__social">
+            <a class="social-item social-item--facebook" href="#"></a>
+            <a class="social-item social-item--twitter" href="#"></a>
+            <a class="social-item social-item--instagram" href="#"></a>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="footer-menu footer-menu-first">
-            <a href="#">About UberEats</a>
-            <a href="#">Become a Delivery Partner</a>
-            <a href="#">Become a Restaurant Partner</a>
+          <div class="footer__menu">
+            <a class="menu-item" href="#">About UberEats</a>
+            <a class="menu-item" href="#">Become a Delivery Partner</a>
+            <a class="menu-item" href="#">Become a Restaurant Partner</a>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="footer-menu footer-menu-second">
-            <a href="#">See all cities</a>
-            <a href="#">Pricing</a>
-            <a href="#">Help</a>
-            <a href="#">FAQs</a>
-          </div>
-        </div>
-
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <hr class="hr-2">
-        </div>
-
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="apps">
-            <a href="#" class="appstore"></a>
-            <a href="#" class="gplay"></a>
+          <div class="footer__menu">
+            <a class="menu-item" href="#">See all cities</a>
+            <a class="menu-item" href="#">Pricing</a>
+            <a class="menu-item" href="#">Help</a>
+            <a class="menu-item" href="#">FAQs</a>
           </div>
         </div>
 
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <hr class="hr-3">
+          <hr class="footer__line">
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="footer__apps">
+            <a class="link-app link-app--appstore" href="#"></a>
+            <a class="link-app link-app--googleplay" href="#"></a>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <hr class="footer__line">
         </div>
 
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <a href="#" class="copyright">© 2017 Uber Technologies Inc.</a>
+          <p class="footer__copyright" href="#">© 2017 Uber Technologies Inc.</p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <a href="#" class="copyright">Privacy</a>
+          <a class="footer__copyright" href="#">Privacy</a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <a href="#" class="copyright">Terms</a>
+          <a class="footer__copyright" href="#">Terms</a>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <a href="#" class="up"></a>
+  <a class="body__scroll" href="#"></a>
   
 </body>
 </html>
