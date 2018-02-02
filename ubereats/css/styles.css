@@ -1,5 +1,4 @@
-/* Flexbox Grid */
-
+/* # Flexbox-сетка */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -131,15 +130,13 @@ html {
   box-sizing: inherit;
 }
 
-/* Оформление сайта */
-
+/* # Стили сайта */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
-
-header {
+/* # Header */
+.header {
   display: flex;
   align-items: center;
   height: 72px;
@@ -147,54 +144,59 @@ header {
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
-header .logo {
+/* # Логотип */
+.logo {
   display: flex;
   align-items: center;
   height: 40px;
 }
 
+.logo--footer {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.logo__item {
+  width: 107px;
+}
+
+.logo__item--footer {
+  width: 192px;
+}
+
 @media (min-width: 768px) {
-  header .logo a img {
-    width: 107px;
+  .logo__item {
+    width: 121px;
+  }
+  .logo__item--footer {
+    width: 192px;
   }
 }
 
-header .location {
+/* # Адрес и время доставки */
+.location {
   display: none;
 }
 
 @media (min-width: 768px) {
-  header .location {
+  .location {
     display: flex;
     justify-content: flex-start;
     align-content: center;
   }
 }
 
-header .nav {
+.location--mobile {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-header img {
-  display: flex;
-}
-
-header p {
-  display: inline-flex;
-  margin: 10px 9px 10px 9px;
-  font-size: 13px;
 }
 
 @media (min-width: 768px) {
-  header .location p {
-    font-size: 16px;
+  .location--mobile {
+    display: none;
   }
 }
 
-header .asap-button,
-.location-mobile .asap-button {
+.location__time {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -210,20 +212,36 @@ header .asap-button,
 }
 
 @media (min-width: 768px) {
-  header .asap-button {
+  .location__time {
     width: 57px;
   }
 }
 
 @media (min-width: 992px) {
-  header .asap-button {
+  .location__time {
     font-size: 16px;
     width: 65px;
   }
 }
 
-header .location input,
-.location-mobile input {
+.location__text {
+  display: inline-flex;
+  margin: 0px 9px 0px 9px;
+}
+
+@media (min-width: 768px) {
+  .location__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  .location__text {
+    font-size: 16px;
+  }
+}
+
+.location__address {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -236,85 +254,90 @@ header .location input,
   line-height: 24px;
   padding-left: 36px;
   outline: none;
-  background: url(../images/location.svg) no-repeat 12px;
+  background: url('../images/location.svg') no-repeat 12px;
 }
 
 @media (min-width: 768px) {
-  header .location input {
+  .location__address {
     font-size: 13px;
     width: 215px;
   }
 }
 
 @media (min-width: 992px) {
-  header .location input {
+  .location__address {
     font-size: 16px;
     width: 292px;
   }
 }
 
-header .sign-up-button {
-  display: inline-flex;
+/* # Кнопки входа, регистрации и корзины */
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 40px;
-  border: 1px solid #E0E0E0;
-  border-radius: 2px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #1D1D1D;
-  margin-right: 16px;
 }
 
-@media (min-width: 320px) {
-  header .sign-up-button {
-    font-size: 11px;
-    width: 72px;
-  }
-}
-
-header .register-button {
-  display: inline-flex;
+.header__button {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 72px;
   height: 40px;
-  border: 1px solid #E0E0E0;
   border-radius: 2px;
-  text-decoration: none;
   font-size: 11px;
-  color: #fff;
-  background: #262626;
-  margin-right: 0px;
+  line-height: 13px;
+  margin-right: 16px;
+  font-size: 11px;
+}
+
+.header__button:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  header .register-button {
+  .header__button {
     font-size: 13px;
+    line-height: 24px;
     width: 80px;
-    margin-right: 27px;
   }
 }
 
-header .basket-button {
+.header__button--sign-up {
+  border: 1px solid #E0E0E0;
+  background: #fff;
+}
+
+.header__button--register {
+  background: #262626;
+  color: #fff;
+  border: none;
+}
+
+.header__button-basket {
   display: none;
+  width: 19px;
+  height: 23px;
+  background: url('../images/header__button-basket.svg') no-repeat;
+  border: none;
 }
 
 @media (min-width: 768px) {
-  header .basket-button {
-    display: inline-flex;
-    width: 19px;
-    height: 22px;
-    background: url(../images/basket.svg); 
+  .header__button-basket {
+    display: flex;
   }
 }
 
-.search-field {
+.header__button-basket:hover {
+  cursor: pointer;
+}
+
+/* # Поле поиска */
+.restaurant-list__search {
   margin-top: 32px;
 }
 
-.search-field input {
+.restaurant-list__input {
   display: flex;
   padding: 15px 0px 15px 30px;
   width: 100%;
@@ -324,68 +347,41 @@ header .basket-button {
   font-size: 13px;
   line-height: 24px;
   outline: none;
-  background: url(../images/search.svg) no-repeat 0px;
+  background: url('../images/search.svg') no-repeat 0px;
   background-size: 16px;
 }
 
 @media (min-width: 768px) {
-  .search-field input {
+  .restaurant-list__input {
     font-size: 16px;
   }
 }
 
-.location-mobile {
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .location-mobile {
-    display: none;
-  }
-}
-
-.location-mobile .location {
-  display: flex;
-  justify-content: center;
-}
-
-.location-mobile p {
-  color: #626262;
-  font-size: 11px;
-  line-height: 13px;
-  margin: 24px 0px 8px 0px;
-}
-
-.location-mobile .asap-button {
-  margin-right: 16px;
-}
-
 /* Список ресторанов */
-
-.restaurant-list .restaurant-item {
-  margin-top: 36px;
-}
-
-.restaurant-item img {
-  height: 250px;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .restaurant-item img {
-    height: 256px;
-    width: 100%;
-  }
-}
-
-.restaurant-list h1 {
+.restaurant-list__title {
   font-size: 22px;
   color: #1D1D1D;
   margin: 56px 0px -20px 0px;
   font-weight: normal;
 }
 
-.restaurant-list h2 {
+.restaurant-list__item {
+  margin-top: 36px;
+}
+
+.restaurant-list__photo {
+  height: 250px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .restaurant-list__photo {
+    height: 256px;
+    width: 100%;
+  }
+}
+
+.restaurant-list__name {
   font-size: 16px;
   color: #1D1D1D;
   margin: 16px 0px 4px 0px;
@@ -393,7 +389,7 @@ header .basket-button {
   font-weight: normal;
 }
 
-.restaurant-list h3 {
+.restaurant-list__category {
   display: inline-flex;
   font-size: 14px;
   color: #626262;
@@ -402,7 +398,7 @@ header .basket-button {
   font-weight: normal;
 }
 
-.restaurant-list h4 {
+.restaurant-list__time {
   font-size: 13px;
   color: #1D1D1D;
   margin: 0;
@@ -412,30 +408,29 @@ header .basket-button {
 
 /* Футер */
 
-footer {
+.footer {
   display: flex;
   margin-top: 80px;
   background: #262626;
 }
 
-footer .footer-logo {
-  margin-top: 56px;
-}
-
-footer hr {
+.footer__line {
   opacity: 0.4;
-  margin-top: 40px;
+  margin: 0px;
 }
 
-footer .hr-2 {
-  margin-top: 48px;
+.footer__menu {
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 
-footer .hr-3 {
-  margin-top: 0px;
+.footer__language {
+  background: #3B3B3B;
+  width: 227px;
+  margin-top: 32px;
 }
 
-footer select {
+.footer__select {
   display: flex;
   width: 227px;
   height: 40px;
@@ -448,18 +443,11 @@ footer select {
   font-size: 13px;
   line-height: 13px;
   padding-left: 48px;
-  margin-top: 32px;
   text-transform: uppercase; 
   -webkit-appearance: none;
 }
 
-
-footer .styled-select {
-  background: #3B3B3B;
-  width: 227px;
-}
-
-footer h5 {
+.footer__hash-tag {
   font-size: 16px;
   line-height: 19px;
   color: #fff;
@@ -467,53 +455,35 @@ footer h5 {
   margin: 33px 0px 17px 0px;
 }
 
-footer h5 span {
+.footer__hash-tag--green {
   color: #49A144;
 }
 
-footer .social {
-  display: inline-flex;
+.footer__social {
+  display: flex;
+  margin-right: 15px;
 }
 
-footer .social .fb,
-footer .social .tw,
-footer .social .in {
+.social-item {
   display: inline-flex;
   width: 24px;
   height: 24px;
   margin-right: 12px;
 }
 
-footer .social .fb {
-  background: url(../images/facebook.svg) no-repeat;
+.social-item--facebook {
+  background: url('../images/facebook.svg') no-repeat;
 }
 
-footer .social .tw {
-  background: url(../images/twitter.svg) no-repeat;
+.social-item--twitter {
+  background: url('../images/twitter.svg') no-repeat;
 }
 
-footer .social .in {
-  background: url(../images/instagram.svg) no-repeat;
+.social-item--instagram {
+  background: url('../images/instagram.svg') no-repeat;
 }
 
-footer .footer-menu-first {
-  margin-top: 39px;
-}
-
-footer .footer-menu-second {
-  margin-top: 0px;
-}
-
-@media (min-width: 768px) {
-  footer .footer-menu-first {
-    margin-top: 42px;
-  }
-  footer .footer-menu-second {
-    margin-top: 42px;
-  }
-}
-
-footer .footer-menu a {
+.menu-item {
   display: flex;
   color: #fff;
   text-decoration: none;
@@ -522,23 +492,23 @@ footer .footer-menu a {
   margin: 0px 0px 23px 0px;
 }
 
-footer .apps {
+.footer__apps {
   display: flex;
   justify-content: center;
 }
 
-footer .apps a {
+.link-app {
   margin: 25px 12.5px;
 }
 
-footer .apps .appstore {
+.link-app--appstore {
   width: 107px;
   height: 36px;
   background: url(../images/appstore.png) no-repeat;
   background-size: cover;
 }
 
-footer .apps .gplay {
+.link-app--googleplay {
   width: 124px;
   height: 36px;
   background: url(../images/gplay.png) no-repeat;
@@ -546,20 +516,20 @@ footer .apps .gplay {
 }
 
 @media (min-width: 768px) {
-  footer .apps .appstore {
+  .link-app--appstore {
     width: 121px;
     height: 40px;
   }
-  footer .apps .gplay {
+  .link-app--googleplay {
     width: 135px;
     height: 40px;
   }
-  footer .apps a {
+  .link-app {
     margin: 40px 20px;
   }
 }
 
-footer .copyright {
+.footer__copyright {
   display: flex;
   color: #fff;
   text-decoration: none;
@@ -569,12 +539,12 @@ footer .copyright {
 }
 
 @media (min-width: 768px) {
-  footer .copyright {
+  .footer__copyright {
     margin: 20px 0;
   }
 }
 
-.up {
+.body__scroll {
   width: 80px;
   height: 80px;
   position: fixed;
