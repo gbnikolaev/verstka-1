@@ -149,6 +149,7 @@ body {
   display: flex;
   align-items: center;
   height: 40px;
+  width: 128px;
 }
 
 .logo--footer {
@@ -189,6 +190,7 @@ body {
 .location__form {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .location--mobile {
@@ -221,6 +223,7 @@ body {
 @media (min-width: 768px) {
   .location__time {
     width: 57px;
+    margin-top: 0px;
   }
 }
 
@@ -257,11 +260,15 @@ body {
   margin-right: 16px;
 }
 
+.location__label--margin-right {
+  margin-right: 0px;
+}
+
 .location__address {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 215px;
+  width: 223px;
   height: 40px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
@@ -278,6 +285,7 @@ body {
   .location__address {
     font-size: 13px;
     width: 215px;
+    margin-top: 0px;
   }
 }
 
@@ -329,6 +337,10 @@ body {
   background: #262626;
   color: #fff;
   border: none;
+}
+
+.header__button--margin-right {
+  margin-right: 0px;
 }
 
 .header__button-basket {
