@@ -212,12 +212,16 @@ body {
   height: 40px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
-  text-decoration: none;
   font-size: 13px;
   color: #1D1D1D;
   line-height: 24px;
-  text-align: center;
   margin-top: 8px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+  text-align-last: center;
 }
 
 @media (min-width: 768px) {
@@ -354,6 +358,9 @@ body {
 @media (min-width: 768px) {
   .header__button-basket {
     display: flex;
+  }
+  .header__button--margin-right {
+    margin-right: 16px;
   }
 }
 

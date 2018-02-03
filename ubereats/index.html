@@ -25,7 +25,9 @@
         <div class="col-md-6 col-sm-6">
           <div class="location">
             <form class="location__form" action="#">
-              <input class="location__time" type="text" placeholder="ASAP">
+              <select class="location__time" name="time">
+                <option value="ASAP">ASAP</option>
+              </select>
               <p class="location__text">to</p>
               <input class="location__address" type="text" placeholder="ul. Bolshaya Dmitrovka, 22"></label>
             </form>
@@ -59,7 +61,11 @@
         <div class="col-xs-12">
           <div class="location location--mobile">
             <form class="location__form" action="#">
-              <label class="location__label">When<input class="location__time" type="text" placeholder="ASAP"></label>
+              <label class="location__label">When
+                <select class="location__time" name="time">
+                  <option value="ASAP">ASAP</option>
+                </select>
+              </label>
               <label class="location__label location__label--margin-right">To<input class="location__address" type="text" placeholder="ul. Bolshaya Dmitrovka, 22"></label>
             </form>
           </div>
