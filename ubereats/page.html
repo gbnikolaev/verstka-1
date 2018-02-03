@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UberEats</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+  <header class="header">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-2 col-sm-2 col-xs-4">
+          <div class="logo">
+            <img class="logo__item" src="./images/logo-black.svg" alt="UberEats" title="UberEats">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="location">
+            <form class="location__form" action="#">
+              <select class="location__time" name="time">
+                <option value="ASAP">ASAP</option>
+              </select>
+              <p class="location__text">to</p>
+              <input class="location__address" type="text" placeholder="ul. Bolshaya Dmitrovka, 22"></label>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-3 col-xs-6">
+          <div class="header__buttons">
+            <button class="header__button header__button--sign-up">Sign Up</button>
+            <button class="header__button header__button--register header__button--margin-right">Register</button>
+            <button class="header__button-basket"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-5 col-sm-7 col-xs-12">
+          <div class="hero__item">
+            <h1 class="hero__title">Трактир «Пушкин»</h1>
+            <h2 class="hero__info">₽₽₽ • Европейская</h2>
+            <span class="hero__time">40 - 50 Min</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+
+        <a class="nav__link nav__link--active" href="#">Закуски</a>
+        <a class="nav__link" href="#">Салаты</a>
+        <a class="nav__link" href="#">Супы</a>
+        <a class="nav__link" href="#">Горячие блюда</a>
+        <a class="nav__link" href="#">Гарниры</a>
+        <a class="nav__link" href="#">Десерты</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="menu">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <h3 class="menu__title">Закуски</h3>
+          <hr class="menu__line">
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item menu__item--margin-top">
+            <div class="menu__description">
+              <h4 class="menu__name">Сельдь на бородинском хлебе</h4>
+              <h6 class="menu__info">С яйцом и огурцом</h6>
+              <h5 class="menu__price">240 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item1.jpg" alt="Сельдь на бородинском хлебе">
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item">
+            <div class="menu__description">
+              <h4 class="menu__name">Соленья ассорти</h4>
+              <h5 class="menu__price menu__price--without-info">320 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item2.jpg" alt="Соленья ассорти">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item menu__item--margin-top menu__item--row-margin">
+            <div class="menu__description">
+              <h4 class="menu__name">Соленья ассорти</h4>
+              <h5 class="menu__price menu__price--without-info">320 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item3.jpg" alt="Соленья ассорти">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item menu__item--row-margin">
+            <div class="menu__description">
+              <h4 class="menu__name">Грибы маринованные</h4>
+              <h5 class="menu__price menu__price--without-info">300 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item4.jpg" alt="Грибы маринованные">
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item menu__item--row-margin">
+            <div class="menu__description">
+              <h4 class="menu__name">Сало домашнее с горчицей</h4>
+              <h5 class="menu__price menu__price--without-info">320 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item5.jpg" alt="Сало домашнее с горчицей">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+          <div class="menu__item menu__item--row-margin">
+            <div class="menu__description">
+              <h4 class="menu__name">Малосольная семга</h4>
+              <h5 class="menu__price menu__price--without-info">350 ₽</h5>
+            </div>
+            <img class="menu__img" src="./images/menu__item6.jpg" alt="Малосольная семга">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer footer--page">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="logo logo--footer">
+            <img class="logo__item logo__item--footer" src="./images/logo-white.svg" alt="UberEats" title="UberEats">
+          </div>
+          <hr class="footer__line">
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="footer__language">
+            <select class="footer__select" name="language">
+              <option value="English">English</option>
+            </select>
+          </div>
+
+          <h5 class="footer__hash-tag">
+            <span class="footer__hash-tag--green">#</span>UberEats
+          </h5>
+          
+          <div class="footer__social">
+            <a class="social-item social-item--facebook" href="#"></a>
+            <a class="social-item social-item--twitter" href="#"></a>
+            <a class="social-item social-item--instagram" href="#"></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="footer__menu footer__menu--margin-top">
+            <a class="menu-item" href="#">About UberEats</a>
+            <a class="menu-item" href="#">Become a Delivery Partner</a>
+            <a class="menu-item" href="#">Become a Restaurant Partner</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="footer__menu footer__menu--margin-bottom">
+            <a class="menu-item" href="#">See all cities</a>
+            <a class="menu-item" href="#">Pricing</a>
+            <a class="menu-item" href="#">Help</a>
+            <a class="menu-item" href="#">FAQs</a>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <hr class="footer__line">
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="footer__apps">
+            <a class="link-app link-app--appstore" href="#"></a>
+            <a class="link-app link-app--googleplay" href="#"></a>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <hr class="footer__line">
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <p class="footer__copyright footer__copyright--margin-top" href="#">© 2017 Uber Technologies Inc.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <a class="footer__copyright" href="#">Privacy</a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <a class="footer__copyright footer__copyright--margin-bottom" href="#">Terms</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <a class="body__scroll" href="#"></a>
+
+</body>
+</html>
