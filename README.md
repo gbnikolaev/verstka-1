@@ -6,6 +6,8 @@
 
 index.html и index.css в папке small-page — мы играли с семантикой и знакомились с css-селекторами.
 
-## Вёрстка UberEats
+## Вёрстка дизайн-макета UberEats
 
-В процессе.
+Готова, находится в папке ./ubereats
+
+Там 2 страницы: Главная со списком ресторанов ([index](https://tmshchk.github.io/verstka/ubereats/)) и Страница открытого ресторана ([page](https://tmshchk.github.io/verstka/ubereats/page.html)). Обе полностью адаптивны.
